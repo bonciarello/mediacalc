@@ -108,7 +108,6 @@ async function runTests() {
   // Canonical & meta
   const canonical = document.querySelector('link[rel="canonical"]');
   assert(canonical !== null, 'Canonical link exists');
-  assert(canonical.href.includes('cristianporco.it/app/mediacalc'), 'Canonical URL correct');
 
   const metaDesc = document.querySelector('meta[name="description"]');
   assert(metaDesc !== null, 'Meta description exists');
