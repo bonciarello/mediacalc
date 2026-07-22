@@ -478,6 +478,14 @@
       font-weight: 600;
     }
 
+    @media (max-width: 600px){
+      .table-scroll{
+        overflow-x: auto;
+        max-width: 100%;
+        -webkit-overflow-scrolling: touch;
+      }
+    }
+
     /* === FOOTER === */
     .app-footer{
       text-align: center;
@@ -726,21 +734,23 @@
 
     <!-- COMPARISON CARD -->
     <section class="card" aria-labelledby="comparisonHeading">
-      <table class="comparison-table" role="table">
-        <caption id="comparisonHeading">Tutti i tipi di file — confronto rapido</caption>
-        <thead>
-          <tr>
-            <th scope="col">Tipo di file</th>
-            <th scope="col" class="num">Dim. media</th>
-            <th scope="col" class="num">File in 32 GB</th>
-            <th scope="col" class="num">File in 128 GB</th>
-            <th scope="col" class="num">File in 1 TB</th>
-          </tr>
-        </thead>
-        <tbody id="comparisonBody">
-          <!-- Populated by JS -->
-        </tbody>
-      </table>
+      <div class="table-scroll">
+        <table class="comparison-table" role="table">
+          <caption id="comparisonHeading">Tutti i tipi di file — confronto rapido</caption>
+          <thead>
+            <tr>
+              <th scope="col">Tipo di file</th>
+              <th scope="col" class="num">Dim. media</th>
+              <th scope="col" class="num">File in 32 GB</th>
+              <th scope="col" class="num">File in 128 GB</th>
+              <th scope="col" class="num">File in 1 TB</th>
+            </tr>
+          </thead>
+          <tbody id="comparisonBody">
+            <!-- Populated by JS -->
+          </tbody>
+        </table>
+      </div>
     </section>
 
   </main>
